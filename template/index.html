@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breast Cancer Prediction</title>
+    <!-- <link href="style.css" rel="stylesheet"> -->
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/mainpage.css') }}">
+  </head>
+  <body>
+    <div class="login">
+      <script src="{{url_for('static', filename='../static/script/validation.js')}}"></script>
+        <form action="{{ url_for('predict')}}" method="post" onsubmit="return validation();">
+          <h1 class="title">Breast Cancer Prediction</h1>
+          <div class="inputs">
+            <input class="input" type="text" id="clump_thickness" name="clump_thickness" placeholder="Clump Thickness:",required="required">
+            <input class="input" type="text" id="uniform_cell_size" name="uniform_cell_size" placeholder="Uniform Cell Size:",required="required">
+            <input class="input" type="text" id="uniform_cell_shape" name="uniform_cell_shape" placeholder="Uniform Cell Shape:",required="required">
+            <input class="input" type="text" id="marginal_adhesion" name="marginal_adhesion" placeholder="Marginal Adhesion:",required="required">
+            <input class="input" type="text" id="single_epithelial_size" name="single_epithelial_size" placeholder="Single Epithelial Size:",required="required">
+            <input class="input" type="text" id="bare_nuclei" name="bare_nuclei" placeholder="Bare Nuclei:",required="required">
+            <input class="input" type="text" id="bland_chromatin" name="bland_chromatin" placeholder="Bland Chromatin:",required="required">
+            <input class="input" type="text" id="normal_nucleoli" name="normal_nucleoli" placeholder="Normal Nucleoli:",required="required">
+            <input class="input" type="text" id="mitoses" name="mitoses" placeholder="Mitosis:",required="required">
+          </div>
+          <div class="btn-div">
+            <button type="submit" class='btn first'><h4>Click Here to Predict</h4></button>
+          </div>
+        </form>
+        <h2 class="result"></h2>
+    </div>
+
+  </body>
+</html>

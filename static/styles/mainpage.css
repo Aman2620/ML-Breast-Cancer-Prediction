@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=PT+Sans&family=Poppins:wght@200;300&family=Roboto:wght@300&display=swap");
+/* font-family: 'Anton', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'PT Sans', sans-serif;
+font-family: 'Roboto', sans-serif; */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  /* background-color: #6a93cb; */
+  /* background-image: linear-gradient(315deg, #6a93cb 0%, #a4bfef 74%); */
+  /* background-color: #fff293; */
+  /* background-image: linear-gradient(315deg, #fff293 0%, #ffe884 74%); */
+  /* background-image: linear-gradient(to left,#964720,#c75a24,#e88756); */
+}
+
+body{
+  background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) , url(../img/formBackgroundPBL.jpeg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+.title{
+  font-size: 45px;
+  padding-top: 50px;
+}
+.inputs{
+  margin-top: 130px;
+}
+
+input[type="text"] {
+  border: 2px solid #aaa;
+  border-radius: 4px;
+  margin: 10px;
+  outline: none;
+  padding: 8px;
+  box-sizing: border-box;
+  transition: 0.3s;
+  margin-top: 30px;
+}
+
+input[type="text"]:focus {
+  border-color: #00fc08;
+  box-shadow: 0 0 8px 0 #00fc08;
+}
+::placeholder{
+  color: black;
+}
+
+.btn {
+  box-sizing: border-box;
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid dodgerblue;
+  border-radius: 0.6em;
+  color: dodgerblue;
+  cursor: pointer;
+  display: flex;
+  align-self: center;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  margin: 20px;
+  padding: 1.2em 2.8em;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+.btn:hover,
+:focus {
+  background-color: lightblue;
+  outline: 0;
+}
+
+.first {
+  transition: box-shadow 300ms ease-in-out, dodgerblue 300ms ease-in-out;
+}
+.first :hover {
+  background-color: lightblue;
+}
+
+.title {
+  text-align: center;
+  margin-top: 25px;
+  /* color: dodgerblue; */
+  background-image: linear-gradient(to top, #46e074,#39b85f,#1fbf4f,#14a63f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: italic;
+}
+
+.inputs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.input {
+  flex: 0 0 30%;
+}
+
+.btn-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+h2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

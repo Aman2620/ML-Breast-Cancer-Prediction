@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/afterstyle.css') }}">
+  </head>
+  <body>
+    <!-- <center>
+    <h1>Prediction:</h1>
+
+    {%if data == 2%}
+      <h2>Patient has type 2 Benign Cancer</h2>
+
+
+    {%else%}
+      <h2>Patient has type 4 Malignant Cancer</h2>
+
+
+    {%endif%}
+  </center> -->
+  <div class="output">
+        <div class="prediciton">
+          <h1>Prediction</h1>
+        </div>
+        <div class="pre-output">
+          {%if data == 2%}
+          <h2>Patient has type 2 Benign Cancer</h2>
+          <div class="info-benign">
+            <p><b>Benign (non-cancerous) breast conditions are unusual growths or other changes in the breast tissue that are not cancer.Having a benign breast condition can be scary at first because the symptoms often mimic those caused by breast cancer. You or your doctor might be able to feel a lump or see nipple discharge, or your mammogram might pick up something that requires further testing.</b></p>
+          </div>
+
+          <div class="cards">
+
+
+    <div class="card">
+      <a href="#">
+      <img class="card__image" src="../static/img/istockphoto-1319979886-612x612.jpg" alt="">
+      </a>
+      <div class="card__info">
+        <div>
+          <a href="./" class="card__link">Max Super Speciality Hospital, Saket, New Delhi</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="card">
+      <a href="#">
+      <img class="card__image" src="../static/img/medical-hospital-building-vector-cartoon-style-illustration-isolated-white-background-103197617.jpg" alt="">
+      </a>
+      <div class="card__info">
+        <div>
+          <a href="./" class="card__link">Kokilaben Dhirubhai Ambani Hospital Mumbai.</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="card">
+      <a href="#">
+      <img class="card__image" src="..\static\img\multispeciality-hospital.jpg" alt="">
+      </a>
+      <div class="card__info">
+        <div>
+          <a href="./" class="card__link">Dr. Vibhor Mahendru Breast Cancer Specialist, Lucknow</a>
+        </div>
+      </div>
+
+    </div>
+      </div>
+
+          {%else%}
+          <h2>Patient has type 4 Malignant Cancer</h2>
+
+          <div class="info-benign">
+            <p><b>malignant is a tumor that grows in or around the breast tissue, mainly in the milk ducts and glands. A tumor usually starts as a lump or calcium deposit that develops as a result of abnormal cell growth. Most breast lumps are benign but some can be premalignant (may become cancer) or malignant.</b></p>
+          </div>
+
+          <div class="cards">
+
+
+    <div class="card">
+      <a href="#">
+      <img class="card__image" src="../static/img/istockphoto-1319979886-612x612.jpg" alt="">
+      </a>
+      <div class="card__info">
+        <div>
+          <a href="./" class="card__link">Max Super Speciality Hospital, Saket, New Delhi</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="card">
+      <a href="#">
+      <img class="card__image" src="../static/img/medical-hospital-building-vector-cartoon-style-illustration-isolated-white-background-103197617.jpg" alt="">
+      </a>
+      <div class="card__info">
+        <div>
+          <a href="./" class="card__link">Kokilaben Dhirubhai Ambani Hospital Mumbai.</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="card">
+      <a href="#">
+      <img class="card__image" src="../static/img/multispeciality-hospital.jpg" alt="">
+      </a>
+      <div class="card__info">
+        <div>
+          <a href="./" class="card__link">Dr. Vibhor Mahendru Breast Cancer Specialist, Lucknow</a>
+        </div>
+      </div>
+
+    </div>
+      </div>
+
+
+      {%endif%}
+      </div>
+    <section>
+      <div class="wave"></div>
+    </section>
+    </div>
+    </body>
+
+
+
+
+  <section>
+    <div class="wave"></div>
+  </section>
+
+  </body>
+</html>
